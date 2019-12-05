@@ -1,3 +1,8 @@
+<?php
+function whoAreYou($name, $firstname, $age) {
+  return 'Bonjour ' . $firstname . ' ' . $name . ', tu as ' . $age . ' ans';
+}
+?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -6,12 +11,7 @@
   </head>
   <body>
     <p>
-      <?php
-      function whoAreYou($name = 'Granizo y Oliver', $firstname = 'Raphaël', $age = 41){
-        return 'Bonjour '.' '.'$firstname'.' '.'$name'.', tu as'.' '.'$age';
-      }
-      echo whoAreYou();
-      ?>
+      <?php echo whoAreYou('Doe', 'John', 27); ?>
     </p>
   </body>
 </html>
